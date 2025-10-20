@@ -1,110 +1,155 @@
-#  DỰ ÁN: QUẢN LÝ LỊCH HỌC
+# 🌟 DỰ ÁN: QUẢN LÝ LỊCH HỌC
 
-> **Bài tập lớn môn Thiết kế Web**  
-> Ngôn ngữ: HTML, CSS, JavaScript  
-> Giao diện hiển thị bằng tiếng Việt
+**Bài tập lớn — Môn: Thiết kế Web**  
+Ngôn ngữ: HTML, CSS, JavaScript  
+Giao diện hiển thị: Tiếng Việt
 
 ---
 
-##  Giới thiệu
-
+## 📌 Giới thiệu
 Dự án **Quản lý Lịch học** là một ứng dụng web đơn giản giúp người dùng (sinh viên hoặc giáo viên) dễ dàng:
 - Quản lý **thời khóa biểu**
 - Thêm và theo dõi **bài tập**
 - Quản lý **thông báo cá nhân**
 - Xem **thống kê trực quan** bằng biểu đồ
-- Lưu trữ dữ liệu **cục bộ** trên trình duyệt thông qua `localStorage`
+- Lưu trữ dữ liệu cục bộ trên trình duyệt qua `localStorage`
 
-Ứng dụng được thiết kế hiện đại, giao diện thân thiện, sử dụng **Chart.js** để hiển thị thống kê.
-
----
-
-
-##  Tính năng nổi bật
-
-###  Quản lý Lịch học
-- Thêm, hiển thị và xóa các buổi học theo ngày & khung giờ.
-- Lưu trữ tự động bằng **Local Storage**.
-- Giao diện bảng thời khóa biểu trực quan.
-
-###  Quản lý Bài tập
-- Thêm bài tập theo môn học, thời hạn nộp.
-- Đánh dấu bài tập đã hoàn thành hoặc cần làm.
-- Phân loại tự động và hiển thị rõ ràng.
-
-###  Quản lý Thông báo
-- Tạo thông báo mới có ngày nhắc cụ thể.
-- Hiển thị danh sách thông báo sắp tới.
-
-###  Thống kê
-- Thống kê tổng số lịch học, bài tập đã hoàn thành / chưa hoàn thành.
-- Biểu đồ hiển thị bằng **Chart.js** (dạng cột và tròn).
-
-###  Cài đặt
-- Lưu thông tin cá nhân (tên, vai trò).
-- Bật/tắt thông báo desktop.
-- Xóa toàn bộ dữ liệu cục bộ chỉ bằng 1 cú nhấp.
+Giao diện hiện đại, thân thiện, sử dụng **Chart.js** để hiển thị biểu đồ.
 
 ---
 
-##  Công nghệ sử dụng
-
-| Thành phần | Công nghệ |
-|-------------|------------|
-| Giao diện | HTML5, CSS3 (Flexbox, Grid, Gradient UI) |
-| Hiệu ứng & Logic | JavaScript (thuần) |
-| Lưu trữ | LocalStorage |
-| Biểu đồ | [Chart.js](https://www.chartjs.org/) |
-| Icon | [Font Awesome](https://fontawesome.com/) |
+## ✨ Tính năng chính
+- **Quản lý Lịch học**
+  - Thêm / hiển thị / xóa buổi học theo ngày & khung giờ.
+  - Lưu trữ tự động bằng `localStorage`.
+- **Quản lý Bài tập**
+  - Thêm bài tập theo môn và hạn nộp.
+  - Đánh dấu đã hoàn thành / chưa hoàn thành.
+- **Quản lý Thông báo**
+  - Tạo thông báo có ngày nhắc.
+  - Hiển thị danh sách thông báo sắp tới.
+- **Thống kê**
+  - Tổng số lịch học, bài tập hoàn thành/không hoàn thành.
+  - Biểu đồ dạng cột & tròn (Chart.js).
+- **Cài đặt**
+  - Lưu tên & vai trò.
+  - Bật/tắt thông báo desktop.
+  - Xóa toàn bộ dữ liệu cục bộ.
 
 ---
-Quy trình làm việc với mã nguồn
-🔹 1. Clone dự án
 
-Dùng lệnh sau để tải mã nguồn về:
+## 🛠 Công nghệ sử dụng
+- HTML5, CSS3 (Flexbox, Grid)
+- JavaScript (thuần)
+- LocalStorage (lưu dữ liệu cục bộ)
+- Chart.js (biểu đồ)
+- Font Awesome (icon)
 
+---
+
+## 📁 Cấu trúc thư mục (gợi ý)
+Project/
+├── assets/
+│ └── css/
+│ └── base.css # Các biến & style mặc định toàn dự án
+├── css/
+│ ├── trangchu.css
+│ ├── dangnhap.css
+│ ├── quenmk.css
+│ └── caidat.css
+├── images/
+├── trangchu.html
+├── trangchu.js
+├── dangnhap.html
+├── quenmk.html
+└── README.md
+
+yaml
+Sao chép mã
+
+**Ghi chú:**  
+- Gắn `assets/css/base.css` để chứa các quy ước mặc định (reset, biến màu, typography, spacing...).  
+- Mỗi page / module có 1 file CSS riêng trong `/css`.
+
+---
+
+## 🚀 Cách chạy project (local)
+1. Clone repo:
+```bash
 git clone https://github.com/dat19uhtatd/btl-tk-web.git
+cd btl-tk-web
+Mở file trangchu.html trực tiếp trên trình duyệt hoặc chạy server đơn giản:
 
-🔹 2. Tạo branch mới trước khi làm việc
+bash
+Sao chép mã
+# Dùng Python (port 8080)
+python -m http.server 8080
+# -> truy cập: http://localhost:8080/trangchu.html
+⚙️ Quy trình làm việc với mã nguồn (Git workflow)
+Tuân thủ quy trình này để tránh xung đột và giúp team dễ quản lý:
 
-Luôn pull lại dự án trước khi bắt đầu:
-
-git pull
-
-
-Sau đó tạo một branch mới để làm việc (không sửa trực tiếp trên main):
-
-git checkout -b ten-branch-cua-ban
-
-🔹 3. Đẩy mã nguồn lên repository
-
-Sau khi hoàn thành, thực hiện:
-
+1. Pull trước khi bắt đầu
+bash
+Sao chép mã
+git pull origin main
+2. Tạo branch mới (mỗi task / feature một branch)
+bash
+Sao chép mã
+# tạo branch và chuyển sang branch đó
+git checkout -b feature/my-feature-name
+3. Làm việc, commit, push lên remote branch
+bash
+Sao chép mã
 git add .
-git commit -m "Mô tả thay đổi"
-git push origin main
+git commit -m "Mô tả rõ thay đổi, ví dụ: add: login form validation"
+git push origin feature/my-feature-name
+4. Tạo Pull Request (PR)
+Tạo PR trên GitHub từ feature/my-feature-name → main.
 
+Ghi mô tả PR rõ ràng: mục tiêu, thay đổi chính, cách test.
 
-Tạo Pull Request (PR) trên GitHub để merge vào main.
+Tuyệt đối không push trực tiếp lên main.
 
- Tuyệt đối không push trực tiếp lên nhánh main.
- 
- Lưu ý về code và style
- 
- Comment rõ ràng, dễ hiểu, hỗ trợ người đọc nắm nhanh logic.
- 
- Code gọn gàng, có trình tự, tách riêng từng phần rõ ràng.
- 
- Đặt tên class theo chuẩn BEM (block__element--modifier), đảm bảo ý nghĩa và thống nhất.
- 
- Có thể đặt tên tiếng Việt hoặc tiếng Anh (ưu tiên tiếng Anh), tránh trộn lẫn hoặc từ đồng nghĩa.
- 
- Giữ nguyên cấu trúc thư mục như hiện tại để đảm bảo đồng nhất.
- 
- Mỗi phần giao diện (page) nên có file CSS riêng trong thư mục /css.
+✅ Lưu ý về code style & quy ước
+Comment rõ ràng, ngắn gọn, giúp người đọc nắm nhanh logic.
 
-👨‍💻 Thành viên thực hiện
+Code phải có trình tự, dễ đọc, tách module rõ ràng.
 
+Đặt tên class theo chuẩn BEM: block__element--modifier.
+
+Ví dụ:
+
+card, card__title, card__title--highlight
+
+Ưu tiên tiếng Anh cho tên class / biến; tránh trộn lẫn tiếng Việt & tiếng Anh.
+
+Tách CSS theo module: mỗi page / component 1 file CSS trong /css.
+
+Dùng assets/css/base.css để đặt reset, biến CSS (colors, spacing, font-size) và các quy tắc chung.
+
+🔧 Ví dụ nhanh — BEM & comment
+HTML:
+
+html
+Sao chép mã
+<!-- block: timetable -->
+<div class="timetable">
+  <div class="timetable__row">
+    <div class="timetable__cell timetable__cell--highlight">07:00 - 08:30</div>
+  </div>
+</div>
+JS comment mẫu:
+
+js
+Sao chép mã
+// addClass: thêm lịch học mới vào scheduleData và lưu vào localStorage
+function addClass(event) {
+  // validate form
+  // cập nhật scheduleData
+  // saveData()
+  // render lại UI
+}
+👨‍💻 Thông tin thực hiện
 Họ và tên: Phan Tiến Đạt
 
 Lớp: CNTT3-K65
@@ -112,5 +157,4 @@ Lớp: CNTT3-K65
 Môn học: Thiết kế Web
 
 Trường: Đại Học GTVT
-
 
