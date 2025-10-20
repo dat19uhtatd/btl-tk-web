@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 Giới thiệu
+##  Giới thiệu
 
 Dự án **Quản lý Lịch học** là một ứng dụng web đơn giản giúp người dùng (sinh viên hoặc giáo viên) dễ dàng:
 - Quản lý **thời khóa biểu**
@@ -19,58 +19,35 @@ Dự án **Quản lý Lịch học** là một ứng dụng web đơn giản gi�
 
 ---
 
-## 🧩 Cấu trúc thư mục
 
-📂 Project
-│
-├── css/
-│ ├── dangnhap.css # Giao diện trang đăng nhập
-│ ├── quenmk.css # Giao diện quên mật khẩu
-│ ├── caidat.css # Giao diện phần cài đặt
-│ └── trangchu.css # Giao diện chính (Dashboard)
-│
-├── images/ # Thư mục chứa logo & icon
-│
-├── trangchu.html # Trang chính - Quản lý lịch học
-├── trangchu.js # Xử lý logic chính (thêm/sửa/xóa dữ liệu)
-├── dangnhap.html # Trang đăng nhập người dùng
-├── quenmk.html # Trang quên mật khẩu
-│
-└── README.md # Tài liệu hướng dẫn (file này)
+##  Tính năng nổi bật
 
-less
-Sao chép mã
-
----
-
-## 🚀 Tính năng nổi bật
-
-### 📅 Quản lý Lịch học
+###  Quản lý Lịch học
 - Thêm, hiển thị và xóa các buổi học theo ngày & khung giờ.
 - Lưu trữ tự động bằng **Local Storage**.
 - Giao diện bảng thời khóa biểu trực quan.
 
-### 📝 Quản lý Bài tập
+###  Quản lý Bài tập
 - Thêm bài tập theo môn học, thời hạn nộp.
 - Đánh dấu bài tập đã hoàn thành hoặc cần làm.
 - Phân loại tự động và hiển thị rõ ràng.
 
-### 🔔 Quản lý Thông báo
+###  Quản lý Thông báo
 - Tạo thông báo mới có ngày nhắc cụ thể.
 - Hiển thị danh sách thông báo sắp tới.
 
-### 📊 Thống kê
+###  Thống kê
 - Thống kê tổng số lịch học, bài tập đã hoàn thành / chưa hoàn thành.
 - Biểu đồ hiển thị bằng **Chart.js** (dạng cột và tròn).
 
-### ⚙️ Cài đặt
+###  Cài đặt
 - Lưu thông tin cá nhân (tên, vai trò).
 - Bật/tắt thông báo desktop.
 - Xóa toàn bộ dữ liệu cục bộ chỉ bằng 1 cú nhấp.
 
 ---
 
-## 🧠 Công nghệ sử dụng
+##  Công nghệ sử dụng
 
 | Thành phần | Công nghệ |
 |-------------|------------|
@@ -82,7 +59,7 @@ Sao chép mã
 
 ---
 
-## ⚙️ Cách chạy dự án
+##  Cách chạy dự án
 
 ### 🔹 Cách 1: Mở trực tiếp
 1. Giải nén project.
