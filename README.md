@@ -30,22 +30,22 @@
 
 ## ✨ Tính năng chính
 
-### 📅 Quản lý Lịch học
+### Quản lý Lịch học
 - Thêm/hiển thị/xóa buổi học theo ngày và khung giờ
 - Tự động lưu trữ bằng LocalStorage
 - Giao diện lịch trực quan, dễ theo dõi
 
-### 📚 Quản lý Bài tập
+###  Quản lý Bài tập
 - Thêm bài tập theo môn học và hạn nộp
 - Đánh dấu trạng thái hoàn thành/chưa hoàn thành
 - Sắp xếp và lọc bài tập theo deadline
 
-### 🔔 Quản lý Thông báo
+###  Quản lý Thông báo
 - Tạo thông báo với ngày nhắc nhở
 - Hiển thị danh sách thông báo sắp tới
 - Hỗ trợ thông báo desktop (nếu được phép)
 
-### 📊 Thống kê trực quan
+###  Thống kê trực quan
 - Tổng số lịch học, bài tập hoàn thành/chưa hoàn thành
 - Biểu đồ cột: Lịch học theo ngày trong tuần
 - Biểu đồ tròn: Tỷ lệ hoàn thành bài tập
@@ -140,34 +140,7 @@ npx http-server -p 8000
 
 ---
 
-## 📁 Cấu trúc dự án
 
-```
-btl-tk-web/
-│
-├── trangchu.html              # Trang chính
-├── README.md                  # Tài liệu dự án
-│
-├── css/                       # Thư mục CSS
-│   ├── style.css              # Style chung
-│   ├── schedule.css           # Style lịch học
-│   ├── homework.css           # Style bài tập
-│   ├── notifications.css      # Style thông báo
-│   ├── statistics.css         # Style thống kê
-│   └── settings.css           # Style cài đặt
-│
-├── js/                        # Thư mục JavaScript
-│   ├── main.js                # Logic chính
-│   ├── schedule.js            # Xử lý lịch học
-│   ├── homework.js            # Xử lý bài tập
-│   ├── notifications.js       # Xử lý thông báo
-│   ├── statistics.js          # Xử lý thống kê
-│   └── storage.js             # LocalStorage helpers
-│
-└── assets/                    # Tài nguyên
-    ├── images/                # Hình ảnh
-    └── icons/                 # Icons
-```
 
 ---
 
@@ -223,40 +196,6 @@ Sau đó:
 3. Điền thông tin PR: mục tiêu, thay đổi chính, cách test
 4. Request review và chờ approve
 
----
-
-## 📝 Code Style & Quy ước
-
-### CSS - BEM Convention
-```css
-/* Block */
-.card { }
-
-/* Element */
-.card__title { }
-.card__content { }
-
-/* Modifier */
-.card--highlighted { }
-
-/* Ví dụ */
-.schedule-item { }
-.schedule-item__time { }
-.schedule-item--completed { }
-```
-
-### JavaScript Style
-```javascript
-// ✅ Sử dụng const/let
-const maxItems = 10;
-let currentIndex = 0;
-
-// ✅ Arrow functions
-schedules.map(item => item.subject);
-
-// ✅ Template literals
-const message = `Bạn có ${count} bài tập`;
-```
 
 ### Quy tắc chung
 - **Indent:** 2 spaces
