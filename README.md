@@ -64,7 +64,7 @@ Sao chép mã
 # Dùng Python (port 8080)
 python -m http.server 8080
 # -> truy cập: http://localhost:8080/trangchu.html
-⚙️ Quy trình làm việc với mã nguồn (Git workflow)
+ Quy trình làm việc với mã nguồn (Git workflow)
 Tuân thủ quy trình này để tránh xung đột và giúp team dễ quản lý:
 
 1. Pull trước khi bắt đầu
@@ -104,36 +104,10 @@ card, card__title, card__title--highlight
 
 Tách CSS theo module: mỗi page / component 1 file CSS trong /css.
 
-Dùng assets/css/base.css để đặt reset, biến CSS (colors, spacing, font-size) và các quy tắc chung.
 
-🔧 Ví dụ nhanh — BEM & comment
-HTML:
-
-html
-Sao chép mã
-<!-- block: timetable -->
-<div class="timetable">
-  <div class="timetable__row">
-    <div class="timetable__cell timetable__cell--highlight">07:00 - 08:30</div>
-  </div>
-</div>
-JS comment mẫu:
-
-js
-Sao chép mã
-// addClass: thêm lịch học mới vào scheduleData và lưu vào localStorage
-function addClass(event) {
-  // validate form
-  // cập nhật scheduleData
-  // saveData()
-  // render lại UI
-}
 👨‍💻 Thông tin thực hiện
 Họ và tên: Phan Tiến Đạt
-
 Lớp: CNTT3-K65
-
 Môn học: Thiết kế Web
-
 Trường: Đại Học GTVT
 
