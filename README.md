@@ -82,7 +82,7 @@ Sau khi hoàn thành, thực hiện:
 
 git add .
 git commit -m "Mô tả thay đổi"
-git push origin ten-branch-cua-ban
+git push origin main
 
 
 Tạo Pull Request (PR) trên GitHub để merge vào main.
