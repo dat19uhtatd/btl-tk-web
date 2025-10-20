@@ -38,12 +38,16 @@ Giao diện hiện đại, thân thiện, sử dụng **Chart.js** để hiển 
 
 ---
 
-## 🛠 Công nghệ sử dụng
-- HTML5, CSS3 (Flexbox, Grid)
-- JavaScript (thuần)
-- LocalStorage (lưu dữ liệu cục bộ)
-- Chart.js (biểu đồ)
-- Font Awesome (icon)
+## Công nghệ sử dụng
+
+| Thành phần | Công nghệ |
+|-------------|------------|
+| Giao diện | HTML5, CSS3 (Flexbox, Grid, Gradient UI) |
+| Hiệu ứng & Logic | JavaScript (thuần) |
+| Lưu trữ | LocalStorage |
+| Biểu đồ | [Chart.js](https://www.chartjs.org/) |
+| Icon | [Font Awesome](https://fontawesome.com/) |
+
 
 ---
 
