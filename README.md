@@ -60,9 +60,6 @@ Mở file trangchu.html trực tiếp trên trình duyệt hoặc chạy server 
 
 bash
 Sao chép mã
-# Dùng Python (port 8080)
-python -m http.server 8080
-# -> truy cập: http://localhost:8080/trangchu.html
  Quy trình làm việc với mã nguồn (Git workflow)
 Tuân thủ quy trình này để tránh xung đột và giúp team dễ quản lý:
 
