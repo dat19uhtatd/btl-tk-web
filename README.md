@@ -54,7 +54,6 @@ Giao diện hiện đại, thân thiện, sử dụng **Chart.js** để hiển 
 
 ## 🚀 Cách chạy project (local)
 1. Clone repo:
-```bash
 git clone https://github.com/dat19uhtatd/btl-tk-web.git
 cd btl-tk-web
 Mở file trangchu.html trực tiếp trên trình duyệt hoặc chạy server đơn giản:
@@ -103,7 +102,6 @@ card, card__title, card__title--highlight
 Ưu tiên tiếng Anh cho tên class / biến; tránh trộn lẫn tiếng Việt & tiếng Anh.
 
 Tách CSS theo module: mỗi page / component 1 file CSS trong /css.
-
 
 👨‍💻 Thông tin thực hiện
 Họ và tên: Phan Tiến Đạt
