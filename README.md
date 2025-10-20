@@ -86,13 +86,21 @@ git push origin ten-branch-cua-ban
 
 
 Tạo Pull Request (PR) trên GitHub để merge vào main.
+
  Tuyệt đối không push trực tiếp lên nhánh main.
+ 
  Lưu ý về code và style
+ 
  Comment rõ ràng, dễ hiểu, hỗ trợ người đọc nắm nhanh logic.
+ 
  Code gọn gàng, có trình tự, tách riêng từng phần rõ ràng.
+ 
  Đặt tên class theo chuẩn BEM (block__element--modifier), đảm bảo ý nghĩa và thống nhất.
+ 
  Có thể đặt tên tiếng Việt hoặc tiếng Anh (ưu tiên tiếng Anh), tránh trộn lẫn hoặc từ đồng nghĩa.
+ 
  Giữ nguyên cấu trúc thư mục như hiện tại để đảm bảo đồng nhất.
+ 
  Mỗi phần giao diện (page) nên có file CSS riêng trong thư mục /css.
 
 👨‍💻 Thành viên thực hiện
