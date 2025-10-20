@@ -47,31 +47,6 @@ Giao diện hiện đại, thân thiện, sử dụng **Chart.js** để hiển 
 
 ---
 
-## 📁 Cấu trúc thư mục (gợi ý)
-Project/
-├── assets/
-│ └── css/
-│ └── base.css # Các biến & style mặc định toàn dự án
-├── css/
-│ ├── trangchu.css
-│ ├── dangnhap.css
-│ ├── quenmk.css
-│ └── caidat.css
-├── images/
-├── trangchu.html
-├── trangchu.js
-├── dangnhap.html
-├── quenmk.html
-└── README.md
-
-yaml
-Sao chép mã
-
-**Ghi chú:**  
-- Gắn `assets/css/base.css` để chứa các quy ước mặc định (reset, biến màu, typography, spacing...).  
-- Mỗi page / module có 1 file CSS riêng trong `/css`.
-
----
 
 ## 🚀 Cách chạy project (local)
 1. Clone repo:
