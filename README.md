@@ -63,7 +63,7 @@ Quy trình làm việc với mã nguồn
 
 Dùng lệnh sau để tải mã nguồn về:
 
-git clone https://github.com/hina-kasumi/BTL_Tk_Web.git
+git clone https://github.com/dat19uhtatd/btl-tk-web.git
 
 🔹 2. Tạo branch mới trước khi làm việc
 
