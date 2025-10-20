@@ -1,4 +1,4 @@
-# 🌟 DỰ ÁN: QUẢN LÝ LỊCH HỌC
+# DỰ ÁN: QUẢN LÝ LỊCH HỌC
 
 **Bài tập lớn — Môn: Thiết kế Web**  
 Ngôn ngữ: HTML, CSS, JavaScript  
