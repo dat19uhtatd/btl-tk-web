@@ -112,6 +112,11 @@ npx http-server -p 8000
 
 ---
 
+**Cách 3:** Nhấn vào link này: http://127.0.0.1:5500/dangnhap.html
+
+
+---
+
 ## 📖 Hướng dẫn sử dụng
 
 ### 1. Thêm lịch học
