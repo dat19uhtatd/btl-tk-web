@@ -1,45 +1,36 @@
-/* ===== IMPORT FONT (tùy chọn, giữ nguyên được nếu bạn không muốn) ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/* ===== RESET & BASE STYLES (Giữ nguyên) ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== NEW COLOR PALETTE (Bảng màu mới: Teal-Purple & Soft Gradients) ===== */
 :root{
-    /* Background Gradient: Dịu và hiện đại hơn */
-    --bg-gradient-1: #c471ed; /* Soft Purple */
-    --bg-gradient-2: #12c2e9; /* Light Teal */
+    --bg-gradient-1: #c471ed;
+    --bg-gradient-2: #12c2e9;
     
     --card-bg: #ffffff;
     
-    /* Text/Muted: Giữ nguyên hoặc tinh chỉnh nhẹ */
     --primary-text: #1a202c; 
     --muted: #6a7387; 
     
-    /* Accent: Tông màu chủ đạo mới - Teal & Purple */
-    --accent: #00bcd4; /* Light Teal/Cyan */
-    --accent-2: #8a2be2; /* Blue Violet/Medium Purple */
+    --accent: #00bcd4;
+    --accent-2: #8a2be2;
     
-    --success: #06d6a0; /* Mint Green */
-    --danger: #ff6b6b; /* Soft Red */
+    --success: #06d6a0;
+    --danger: #ff6b6b;
     
     --glass: rgba(255,255,255,0.7);
     
-    /* Shadows: Nhẹ nhàng, mờ hơn */
     --shadow-1: 0 4px 16px rgba(18,37,65,0.06);
     --shadow-2: 0 10px 30px rgba(18,37,65,0.10);
     
-    --radius-lg: 14px; /* Tăng nhẹ độ bo góc */
+    --radius-lg: 14px;
 }
 
-/* Body (Nền mượt hơn) */
 body {
     font-family: 'Poppins', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    /* Sử dụng biến mới */
     background: linear-gradient(135deg, var(--bg-gradient-1) 0%, var(--bg-gradient-2) 100%);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
@@ -48,20 +39,15 @@ body {
     line-height: 1.5;
 }
 
-/* Container (Giữ nguyên) */
 .dashboard-container {
     display: flex;
     min-height: 100vh;
 }
 
-/* ------------------------------------------ */
-/* ===== SIDEBAR (Dark theme hiện đại) ===== */
-/* ------------------------------------------ */
 .sidebar {
     width: 260px;
-    /* Gradient mới: Deep Indigo to Dark Slate */
     background: linear-gradient(180deg, #1c2541 0%, #293855 100%);
-    color: #f1f4f8; /* Tăng độ sáng cho chữ */
+    color: #f1f4f8;
     display: flex;
     flex-direction: column;
     box-shadow: 4px 0 20px rgba(0,0,0,0.3);
@@ -74,31 +60,29 @@ body {
     transition: width 0.25s ease, transform 0.25s ease;
 }
 
-/* Sidebar header */
 .sidebar-header {
     padding: 28px 20px;
     text-align: center;
     border-bottom: 1px solid rgba(255,255,255,0.08);
-    background: rgba(0,0,0,0.1); /* Màu nền đậm hơn */
+    background: rgba(0,0,0,0.1);
 }
 
-/* Logo */
 .logo {
     margin-bottom: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .logo img {
-    width: 66px; /* Lớn hơn chút */
+    width: 66px;
     height: 66px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid rgba(255,255,255,0.2); /* Border dày hơn, mờ hơn */
+    border: 4px solid rgba(255,255,255,0.2);
     box-shadow: 0 6px 18px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.06);
 }
 
-/* Sidebar title */
 .sidebar h2 {
     font-size: 18px;
     font-weight: 600;
@@ -106,7 +90,6 @@ body {
     letter-spacing: 0.2px;
 }
 
-/* Menu (Tinh chỉnh hover và active) */
 .menu {
     list-style: none;
     padding: 12px 0;
@@ -114,13 +97,13 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    gap: 4px; /* Giảm nhẹ khoảng cách */
+    gap: 4px;
 }
 
 .menu li {
-    padding: 13px 18px; /* Tăng padding */
+    padding: 13px 18px;
     margin: 4px 12px;
-    border-radius: 12px; /* Bo góc nhiều hơn */
+    border-radius: 12px;
     cursor: pointer;
     transition: background 0.22s ease, transform 0.18s ease, box-shadow 0.18s ease;
     display: flex;
@@ -132,15 +115,14 @@ body {
 }
 
 .menu li:hover {
-    background: rgba(255,255,255,0.12); /* Hover rõ ràng hơn */
+    background: rgba(255,255,255,0.12);
     transform: translateX(4px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .menu li.active {
-    /* Gradient active mới: Rực rỡ và chuyên nghiệp */
     background: linear-gradient(90deg, var(--accent-2), var(--accent)); 
-    box-shadow: 0 8px 30px rgba(138,43,226,0.35); /* Shadow nổi bật */
+    box-shadow: 0 8px 30px rgba(138,43,226,0.35);
     transform: translateX(6px);
 }
 
@@ -157,12 +139,10 @@ body {
     object-fit: contain;
 }
 
-/* Logout button (Màu đỏ mềm mại hơn) */
 .logout-btn {
     width: 85%;
     margin: 24px auto 16px;
     padding: 13px;
-    /* Gradient mới: Soft Red */
     background: linear-gradient(90deg, var(--danger), #ff9a8d); 
     color: white;
     border: none;
@@ -182,29 +162,24 @@ body {
     box-shadow: 0 12px 28px rgba(255,107,107,0.3);
 }
 
-/* ------------------------------------------ */
-/* ===== MAIN CONTENT (Sáng, sạch) ===== */
-/* ------------------------------------------ */
 .main-content {
     margin-left: 260px;
     flex-grow: 1;
-    background: #f8fafc; /* Màu nền trắng xám rất nhạt */
+    background: #f8fafc;
     min-height: 100vh;
     transition: margin-left 0.25s ease;
 }
 
-/* Header (Nền sáng và shadow tinh tế) */
 .header {
-    background: rgba(255,255,255,0.98); /* Gần như trắng hoàn toàn */
+    background: rgba(255,255,255,0.98);
     padding: 24px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: none;
-    box-shadow: 0 4px 16px rgba(18,37,65,0.04); /* Shadow rất nhẹ */
+    box-shadow: 0 4px 16px rgba(18,37,65,0.04);
 }
 
-/* Title style (Gradient text mới) */
 .header-left h1 {
     font-size: 28px;
     font-weight: 700;
@@ -212,7 +187,6 @@ body {
     align-items: center;
     gap: 12px;
     letter-spacing: 0.2px;
-    /* Gradient text mới: Nổi bật, chuyên nghiệp */
     background: linear-gradient(90deg, var(--accent-2), #00bcd4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -220,12 +194,11 @@ body {
 
 .header-left p {
     font-size: 15px;
-    color: var(--muted); /* Dùng màu muted để dịu hơn */
+    color: var(--muted);
     margin-left: 46px;
     margin-top: 4px;
 }
 
-/* Add button (Gradient và shadow mới) */
 .add-schedule-btn {
     padding: 12px 22px;
     background: linear-gradient(90deg, var(--accent), var(--accent-2));
@@ -247,12 +220,10 @@ body {
     box-shadow: 0 14px 36px rgba(0,188,212,0.3);
 }
 
-/* Content area */
 .content {
     padding: 36px 30px;
 }
 
-/* Tab content show/hide */
 .tab-content {
     display: none;
     animation: fadeIn 0.45s ease;
@@ -262,9 +233,6 @@ body {
     display: block;
 }
 
-/* ------------------------------------------ */
-/* ===== DASHBOARD (cards & form) ===== */
-/* ------------------------------------------ */
 .notification-form {
     background: var(--card-bg);
     padding: 28px;
@@ -288,7 +256,6 @@ body {
     gap: 10px;
 }
 
-/* Form grid: responsive and consistent */
 .form-grid {
     display: grid;
     grid-template-columns: 2fr 1.2fr 1fr;
@@ -303,15 +270,14 @@ body {
     font-size: 14px;
     outline: none;
     transition: border-color 0.18s, box-shadow 0.18s;
-    background: #f9fbfc; /* Nền input nhạt hơn */
+    background: #f9fbfc;
 }
 
 .form-grid input:focus, .form-grid select:focus {
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(0,188,212,0.15); /* Ring shadow nhẹ */
+    box-shadow: 0 0 0 3px rgba(0,188,212,0.15);
 }
 
-/* button in form (Màu Success mới: Mint Green) */
 .form-grid button {
     background: linear-gradient(90deg, #10b981, var(--success)); 
     color: white;
@@ -334,7 +300,6 @@ body {
     box-shadow: 0 12px 28px rgba(6,214,160,0.3);
 }
 
-/* Notifications grid */
 .notifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -342,7 +307,6 @@ body {
     margin-top: 18px;
 }
 
-/* Notification card */
 .notification-card {
     background: var(--card-bg);
     padding: 20px;
@@ -372,7 +336,6 @@ body {
     margin-bottom: 12px;
 }
 
-/* small action button */
 .notification-card button {
     background: #f8fafc;
     color: var(--muted);
@@ -391,9 +354,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* ------------------------------------------ */
-/* ===== TIMETABLE (Sử dụng màu accent) ===== */
-/* ------------------------------------------ */
 .timetable-wrapper {
     overflow-x: auto;
     background: var(--card-bg);
@@ -417,7 +377,6 @@ body {
 }
 
 .timetable th {
-    /* Gradient header mới: Đẹp và sạch hơn */
     background: linear-gradient(90deg, var(--accent), var(--accent-2));
     color: white;
     font-weight: 600;
@@ -434,14 +393,12 @@ body {
     min-height: 84px;
 }
 
-/* zebra rows */
 .timetable tbody tr:nth-child(even) td {
     background: #fbfdff;
 }
 
-/* class cell (Màu xanh dịu và sạch) */
 .class-cell {
-    background: linear-gradient(180deg, #e0f2f7, #c6e9f2); /* Nền xanh nhạt dịu */
+    background: linear-gradient(180deg, #e0f2f7, #c6e9f2);
     border-radius: 10px;
     padding: 10px;
     height: 100%;
@@ -461,7 +418,7 @@ body {
 
 .class-cell strong {
     font-size: 15px;
-    color: #008ba3; /* Màu chữ xanh đậm hơn */
+    color: #008ba3;
     margin-bottom: 4px;
 }
 
@@ -471,7 +428,6 @@ body {
     color: #374151;
 }
 
-/* delete button visibility */
 .delete-class-btn {
     position: absolute;
     top: 6px;
@@ -490,9 +446,6 @@ body {
     opacity: 1;
 }
 
-/* ------------------------------------------ */
-/* ===== ASSIGNMENTS (Thống nhất màu sắc) ===== */
-/* ------------------------------------------ */
 .assignment-form {
     background: var(--card-bg);
     padding: 24px;
@@ -529,9 +482,9 @@ body {
 
 .assignment-card.completed {
     border-left-color: var(--success);
-    background: #f7fffb; /* Nền hơi xanh nhạt khi hoàn thành */
+    background: #f7fffb;
     opacity: 0.9;
-    text-decoration: none; /* Bỏ gạch ngang để trông đẹp hơn */
+    text-decoration: none;
 }
 
 .assignment-card h4 {
@@ -578,9 +531,6 @@ body {
     color: var(--danger);
 }
 
-/* ------------------------------------------ */
-/* ===== STATISTICS (Màu sắc tươi tắn, hài hòa) ===== */
-/* ------------------------------------------ */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -628,7 +578,6 @@ body {
     font-weight: 600;
 }
 
-/* Colors for stat cards */
 .stat-total-classes { border-left-color: var(--accent-2); }
 .stat-total-classes .stat-icon { color: var(--accent-2); }
 .stat-total-classes .stat-value { color: var(--accent-2); }
@@ -637,11 +586,10 @@ body {
 .stat-completed-tasks .stat-icon { color: var(--success); }
 .stat-completed-tasks .stat-value { color: var(--success); }
 
-.stat-pending-tasks { border-left-color: #ffc300; } /* Vàng ấm hơn */
+.stat-pending-tasks { border-left-color: #ffc300; }
 .stat-pending-tasks .stat-icon { color: #ffc300; }
 .stat-pending-tasks .stat-value { color: #ffc300; }
 
-/* Charts wrapper */
 .dashboard-charts-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -674,9 +622,6 @@ body {
     position: relative;
 }
 
-/* ------------------------------------------ */
-/* ===== MODAL (Hiện đại, tối giản) ===== */
-/* ------------------------------------------ */
 .modal {
     display: none;
     position: fixed;
@@ -721,7 +666,6 @@ body {
     gap: 10px;
 }
 
-/* Form groups & inputs inside modal */
 .form-group {
     margin-bottom: 14px;
 }
@@ -767,9 +711,6 @@ body {
     box-shadow: 0 16px 40px rgba(138,43,226,0.25);
 }
 
-/* ------------------------------------------ */
-/* ===== SETTINGS (Đơn giản, sạch sẽ) ===== */
-/* ------------------------------------------ */
 .settings-group {
     background: var(--card-bg);
     padding: 24px;
@@ -812,7 +753,6 @@ body {
     width: 220px;
 }
 
-/* Buttons for settings (Đồng nhất với gradient) */
 .setting-save-btn, .setting-clear-btn {
     padding: 10px 14px;
     border: none;
@@ -836,11 +776,9 @@ body {
     color: white;
 }
 
-/* setting descriptions */
 .setting-description { font-size: 13px; color: #9ca3af; margin-top: 8px; }
 .setting-description.warning { color: var(--danger); }
 
-/* Toggle switch */
 .switch { position: relative; display: inline-block; width: 52px; height: 30px; }
 .switch input { opacity: 0; width: 0; height: 0; }
 .slider {
@@ -864,13 +802,9 @@ body {
 input:checked + .slider { background-color: var(--success); }
 input:checked + .slider:before { transform: translateX(22px); }
 
-/* ------------------------------------------ */
-/* ===== TOAST (Màu sắc accent chủ đạo mới) ===== */
-/* ------------------------------------------ */
 .toast {
     visibility: hidden;
     min-width: 260px;
-    /* Gradient mới */
     background: linear-gradient(90deg, var(--accent), var(--accent-2));
     color: #fff;
     text-align: center;
@@ -892,9 +826,6 @@ input:checked + .slider:before { transform: translateX(22px); }
     transform: translateX(-50%) translateY(0);
 }
 
-/* ------------------------------------------ */
-/* ===== RESPONSIVE (Giữ nguyên) ===== */
-/* ------------------------------------------ */
 @media (max-width: 1200px) {
     .dashboard-charts-grid { grid-template-columns: 1fr; }
     .main-content { margin-left: 220px; }
@@ -941,7 +872,6 @@ input:checked + .slider:before { transform: translateX(22px); }
         gap: 12px;
         padding: 18px;
     }
-    
 
     .header-left h1 { font-size: 20px; }
 
